@@ -13,7 +13,7 @@
      </ol>
      <div class="carousel-inner" role="listbox">
        <div class="item active">
-         <img class="first-slide" src="images/kiki.jpg" alt="First slide">
+         <img class="first-slide" src="images/Kiki.jpg" alt="First slide">
          <div class="container">
            <div class="carousel-caption">
              <h1>{{ $website_name }}</h1>
