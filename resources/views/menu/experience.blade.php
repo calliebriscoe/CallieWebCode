@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('menu/experience')
+@section('menu.experience')
 
 <div class="section">
 

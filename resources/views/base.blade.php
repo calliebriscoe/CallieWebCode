@@ -141,10 +141,10 @@
         <div class="container">
           <div class="content">
               @yield('home')
-              @yield('menu/contact')
-              @yield('menu/experience')
-              @yield('menu/education')
-              @yield('menu/blog')
+              @yield('menu.contact')
+              @yield('menu.experience')
+              @yield('menu.education')
+              @yield('menu.blog')
           </div>
         </div>
     </body>
@@ -152,7 +152,8 @@
     <footer>
       <div class="footer">
       <p class="pull-right"><a href="/">Back to top</a></p>
-      <p> Created by Callie Briscoe in one weekend in November 2015. Self-taught components of this website: Homestead, Laravel, and Heroku.</p>
+      <p> Created by Callie Briscoe in one weekend in November 2015. Self-taught components of this website: Homestead, Laravel, and AWS.
+        See my code for this website and others like it on <a href="https://github.com/calliebriscoe/">Github</a>.</p>
     </div>
     </footer>
 

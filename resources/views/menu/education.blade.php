@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('menu/education')
+@section('menu.education')
 
 <div class="section">
 

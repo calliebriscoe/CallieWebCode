@@ -1,6 +1,6 @@
 @extends('base')
 
-@section('menu/contact')
+@section('menu.contact')
 
 <div class="section">
 

@@ -19,7 +19,7 @@ class HomeController extends Controller
             $website_name = "Callie Briscoe's Website";
             $who_am_i = "I am life long adventurist and I live for a challenge.";
             $what_am_i = "I thrive in quick, ever changing environments.";
-            $where_am_i = "I am not afraid to think outside the box while I striving for knowledge.";
+            $where_am_i = "I am not afraid to think outside the box while I strive for knowledge.";
 
             return view('home', compact('website_name', 'who_am_i', 'what_am_i', 'where_am_i'));
     }
