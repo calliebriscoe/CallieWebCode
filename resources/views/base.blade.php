@@ -105,6 +105,10 @@
                 height:auto;
             }
 
+            .text_experience_right {
+              text-align: right;
+            }
+
         </style>
 
         <script>

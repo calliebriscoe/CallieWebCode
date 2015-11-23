@@ -9,10 +9,11 @@
   </div>
 </tr>
   <div>
-    @if (count($experiences) > 1)
 
+@if (count($experiences) > 1)
+@foreach ($experiences as $experience)
+@if ($experience['id'] % 2 == 0)
 
-    @foreach ($experiences as $experience)
     <hr class="featurette-divider">
     <table>
     <tr>
@@ -24,7 +25,7 @@
         </div>
     </th>
     <th width="30%">
-        <div class="image_experience">
+        <div class="image_experience_left">
           <img class="featurette-image img-responsive" src="{{ $experience['image'] }}">
         </div>
     </th>
@@ -34,7 +35,29 @@
     <tr>
         <p class="text">{{ $experience['description'] }}</p>
  </tr>
-
+@else
+    <hr class="featurette-divider">
+    <table>
+    <tr>
+      <div class="row featurette">
+        <th width="30%">
+            <div class="image_experience">
+              <img class="featurette-image img-responsive" src="{{ $experience['image'] }}">
+            </div>
+        </th>
+        <th width="70%">
+        <div class="text_experience_right">
+          <h1 class="featurette-heading">{{ $experience['job_title'] }}</h1>
+          <h2 class="featurette-date">{{ $experience['company'] }}</br><span class="text-muted">{{ $experience['start_date'] }} - {{ $experience['end_date'] }}</span></h2>
+        </div>
+    </th>
+    </div>
+    </tr>
+    </table>
+    <tr>
+        <p class="text">{{ $experience['description'] }}</p>
+    </tr>
+@endif
 @endforeach
 <hr class="featurette-divider">
 @endif
