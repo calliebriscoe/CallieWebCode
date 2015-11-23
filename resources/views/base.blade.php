@@ -91,6 +91,7 @@
               margin-right: 1em;
               position: inherit;
               text-align: center;
+              bottom:0;
 
             }
 

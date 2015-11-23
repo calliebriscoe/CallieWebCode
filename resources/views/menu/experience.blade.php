@@ -20,7 +20,7 @@
       <div class="row featurette">
         <div class="text_experience">
           <h1 class="featurette-heading">{{ $experience['job_title'] }}</h1>
-          <h2 class="featurette-date">{{ $experience['company'] }}</br><span class="text-muted">{{ $experience['start_date'] }} - {{ $experience['start_date'] }}</span></h2>
+          <h2 class="featurette-date">{{ $experience['company'] }}</br><span class="text-muted">{{ $experience['start_date'] }} - {{ $experience['end_date'] }}</span></h2>
         </div>
     </th>
     <th width="30%">
