@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Experience;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -16,9 +16,11 @@ class ExperienceController extends Controller
      */
     public function index()
     {
-      $title = 'Experience';
+      $experiences = Experience::all();
 
-      return view('menu.experience', compact('title'));
+      $experiences = $experiences->reverse();
+
+      return view('menu.experience', compact('experiences'));
     }
 
     /**

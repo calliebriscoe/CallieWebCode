@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script>
-          $(function(){
-            // You used .myCarousel here.
-            // That's the class selector not the id selector,
-            // which is #myCarousel
-            $('#myCarousel').carousel();
-        </script>
-
 
         <style>
             html, body {
@@ -37,8 +28,13 @@
                 font-size: 1em;
             }
 
+
+            th {
+              padding: 1em;
+            }
+
             .carousel {
-              padding: 0;
+
               width: 100%;
               height: auto;
               left: 0;
@@ -69,7 +65,7 @@
                 font-size: 8vw;
             }
 
-            .container {
+            .body {
                 text-align: center;
             }
 
@@ -80,7 +76,6 @@
             }
 
             .navbar {
-              margin-bottom: 0;
               margin-left: 2vm;
               margin-right: 2vm;
             }
@@ -94,8 +89,7 @@
             .footer {
               margin-left: 1em;
               margin-right: 1em;
-              position:absolute;
-              bottom:0;
+              position: inherit;
               text-align: center;
 
             }
@@ -104,7 +98,21 @@
               margin: 100px;
             }
 
+            .image_experience > img {
+                align-items: center;
+                width: 250px;
+                height:auto;
+            }
+
         </style>
+
+        <script>
+          $(function(){
+            // You used .myCarousel here.
+            // That's the class selector not the id selector,
+            // which is #myCarousel
+            $('#myCarousel').carousel();
+        </script>
 
         <title>Callie Briscoe's Website</title>
 
@@ -137,7 +145,7 @@
       </nav>
     </div>
   </div>
-
+  <div class="body">
         <div class="container">
           <div class="content">
               @yield('home')
@@ -156,6 +164,7 @@
         See my code for this website and others like it on <a href="https://github.com/calliebriscoe/">Github</a>.</p>
     </div>
     </footer>
+  </div>
 
 
 
