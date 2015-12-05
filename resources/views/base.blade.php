@@ -197,6 +197,7 @@
         </script>
 
         <title>Callie Briscoe's Website</title>
+        <link rel="shortcut icon" href="images/callielogo.jpg" />
 
     </head>
     <body>
