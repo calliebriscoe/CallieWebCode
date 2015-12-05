@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Education;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -16,9 +16,11 @@ class EducationController extends Controller
      */
     public function index()
     {
-      $title = 'Education';
+        $educations = Education::all();
 
-      return view('menu.education', compact('title'));
+        $educations = $educations->reverse();
+
+        return view('menu.education', compact('educations'));
     }
 
     /**

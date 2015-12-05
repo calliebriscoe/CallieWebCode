@@ -4,6 +4,7 @@
 <table>
 <tr>
 <div class="section">
+      <hr class="featurette-divider">
   <div class="sub_title">
     <h1>Experience</h1>
   </div>
@@ -59,7 +60,6 @@
     </tr>
 @endif
 @endforeach
-<hr class="featurette-divider">
 @endif
   </table>
   </div>

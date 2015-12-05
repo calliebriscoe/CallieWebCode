@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Experience;
+use App\Education;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
@@ -16,12 +17,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-            $website_name = "Callie Briscoe's Website";
-            $who_am_i = "I am a life long adventurist and I live for a challenge.";
-            $what_am_i = "I thrive in quick, ever changing environments.";
-            $where_am_i = "I am not afraid to think outside the box while I strive for knowledge.";
+            $home = array( 'website_name' => "Callie Briscoe's Website",
+                           'who_am_i' => "I am a life long adventurist and I live for a challenge.",
+                           'what_am_i' => "I thrive in quick, ever changing environments.",
+                           'where_am_i' => "I am not afraid to think outside the box while I strive for knowledge."
+                         );
 
-            return view('home', compact('website_name', 'who_am_i', 'what_am_i', 'where_am_i'));
+            return view('home', compact('home'));
     }
 
 

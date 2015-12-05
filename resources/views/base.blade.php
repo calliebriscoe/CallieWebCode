@@ -4,86 +4,159 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
         <style>
-            html, body {
-                height: 100%;
-                min-height:100%;
-            }
 
-            body {
-                padding: 0;
-                width: 100%;
-                font-weight: 100;
-                font-family: 'Century Gothic';
-            }
+            /* GLOBAL STYLES
+            -------------------------------------------------- */
+            /* Padding below the footer and lighter body text */
 
+            head, body {
+              padding-bottom: 40px;
+              color: #5a5a5a;
+              font-weight: 100;
+              font-family: 'Century Gothic';
+              padding-right: 0; /*15px in bootstrap.css*/
+              padding-left: 0;  /*idem*/
+              text-align: center;
+            }
             h1 {
-                font-size: 3.5em;
+              font-size: 3.5em;
             }
-
             p {
-                font-size: 1em;
+              font-size: 1em;
             }
-
-
             th {
               padding: 1em;
             }
 
-            .carousel {
+            .content {
+              margin-right: auto;
+              margin-left: auto;
+            }
 
-              width: 100%;
-              height: auto;
-              left: 0;
-              right: 0;
+            /* CUSTOMIZE THE NAVBAR
+            -------------------------------------------------- */
+
+            /* Special class on .container surrounding .navbar, used for positioning it into place. */
+            .navbar-wrapper {
               position: absolute;
+              top: 0;
+              right: 0;
+              left: 0;
+              z-index: 20;
+            }
+
+            /* Flip around the padding for proper display in narrow viewports */
+            .navbar-wrapper > .container {
+              padding-right: 0;
+              padding-left: 0;
+            }
+            .navbar-wrapper .navbar {
+              padding-right: 15px;
+              padding-left: 15px;
+            }
+            .navbar-wrapper .navbar .container {
+              width: auto;
+            }
 
 
+            /* CUSTOMIZE THE CAROUSEL
+            -------------------------------------------------- */
+
+            /* Carousel base class */
+            .carousel {
+              height: 50vw;
+              margin-bottom: 60px;
             }
             /* Since positioning the image, we need to help out the caption */
-             .carousel-caption {
-                z-index: 10;
-
+            .carousel-caption {
+              z-index: 10;
             }
 
+            /* Declare heights because of positioning of img element */
+            .carousel .item {
+              height: 50vw;
+              background-color: #777;
+            }
             .carousel-inner > .item > img {
-                align-items: center;
-                width: 100%;
-                left: 0;
-                right: 0;
+              top: 0;
+              left: 0;
+              min-width: 100%;
+              height: 50vw;
             }
 
-            .carousel-caption p {
-                font-size: 3vw;
-                margin-bottom:2vw;
+
+            /* MARKETING CONTENT
+            -------------------------------------------------- */
+
+            /* Center align the text within the three columns below the carousel */
+            .marketing .col-lg-4 {
+              margin-bottom: 20px;
+              text-align: center;
+            }
+            .marketing h2 {
+              font-weight: normal;
+            }
+            .marketing .col-lg-4 p {
+              margin-right: 10px;
+              margin-left: 10px;
             }
 
-            .carousel-caption h1 {
-                font-size: 8vw;
+
+            /* Featurettes
+            ------------------------- */
+
+            .featurette-divider {
+              margin: 80px 0; /* Space out the Bootstrap <hr> more */
             }
 
-            .body {
-                text-align: center;
+            /* Thin out the marketing headings */
+            .featurette-heading {
+              font-weight: 300;
+              line-height: 1;
+              letter-spacing: -1px;
             }
 
-            .content {
-                text-align: center;
-                display: inline-block;
-                vertical-align: middle;
+
+            /* RESPONSIVE CSS
+            -------------------------------------------------- */
+
+            @media (min-width: 768px) {
+              /* Navbar positioning foo */
+              .navbar-wrapper {
+                margin-top: 20px;
+              }
+              .navbar-wrapper .container {
+                padding-right: 15px;
+                padding-left: 15px;
+              }
+              .navbar-wrapper .navbar {
+                padding-right: 0;
+                padding-left: 0;
+              }
+
+              /* The navbar becomes detached from the top, so we round the corners */
+              .navbar-wrapper .navbar {
+                border-radius: 4px;
+              }
+
+              /* Bump up size of carousel content */
+              .carousel-caption p {
+                margin-bottom: 20px;
+                font-size: 28px;
+                line-height: 1.4;
+              }
+
+              .featurette-heading {
+                font-size: 50px;
+              }
             }
 
-            .navbar {
-              margin-left: 2vm;
-              margin-right: 2vm;
-            }
-
-            .navbar-wrapper {
-               top: 0;
-               left: 0;
-               right: 0;
+            @media (min-width: 992px) {
+              .featurette-heading {
+                margin-top: 120px;
+              }
             }
 
             .footer {
@@ -94,11 +167,6 @@
               bottom:0;
 
             }
-
-            .section {
-              margin: 100px;
-            }
-
             .image_experience > img {
                 align-items: center;
                 width: 250px;
@@ -107,6 +175,15 @@
 
             .text_experience_right {
               text-align: right;
+            }
+
+            .img_school {
+              align-items: center;
+              height:auto;
+              width: 100%;
+              top: 0;
+              left: 0;
+              right: 0;
             }
 
         </style>
@@ -160,8 +237,12 @@
               @yield('menu.blog')
           </div>
         </div>
-    </body>
 
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    </body>
+    <hr class="featurette-divider">
     <footer>
       <div class="footer">
       <p class="pull-right"><a href="/">Back to top</a></p>

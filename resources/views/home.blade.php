@@ -16,8 +16,8 @@
          <img class="first-slide" src="images/Kiki.jpg" alt="First slide">
          <div class="container">
            <div class="carousel-caption">
-             <!-- <h1>{{ $website_name }}</h1> -->
-             <p>{{ $where_am_i }}</p>
+             <!-- <h1>{{ $home['website_name'] }}</h1> -->
+             <p>{{ $home['where_am_i'] }}</p>
            </div>
          </div>
        </div>
@@ -25,8 +25,8 @@
          <img class="second-slide" src="images/Austin.jpg" alt="Second slide">
          <div class="container">
            <div class="carousel-caption">
-             <!-- <h1>{{ $website_name }}</h1> -->
-             <p>{{ $what_am_i }}</p>
+             <!-- <h1>{{ $home['website_name'] }}</h1> -->
+             <p>{{ $home['what_am_i'] }}</p>
            </div>
          </div>
        </div>
@@ -34,8 +34,8 @@
          <img class="third-slide" src="images/argo.jpg" alt="Third slide">
          <div class="container">
            <div class="carousel-caption">
-             <!-- <h1>{{ $website_name }}</h1> -->
-             <p>{{ $who_am_i }}</p>
+             <!-- <h1>{{ $home['website_name'] }}</h1> -->
+             <p>{{ $home['who_am_i'] }}</p>
            </div>
          </div>
        </div>
