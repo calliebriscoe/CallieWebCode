@@ -16,10 +16,11 @@ class ContactController extends Controller
      */
     public function index()
     {
+             $title = 'Contact Me:';
+             $name = 'Callie Briscoe';
+             $dog = 'Zane';
 
-              $title = array('title' => 'Contact Me:', 'name' => 'Callie Briscoe');
-
-              return view('menu.contact', compact('title'));
+             return view('menu.contact', compact('title', 'name', 'dog'));
     }
 
     /**
