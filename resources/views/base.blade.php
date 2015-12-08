@@ -35,6 +35,10 @@
               margin-left: auto;
             }
 
+            .main_page {
+              margin-top: 0vw;
+            }
+
             /* CUSTOMIZE THE NAVBAR
             -------------------------------------------------- */
 
@@ -197,7 +201,7 @@
         </script>
 
         <title>Callie Briscoe's Website</title>
-        <link rel="shortcut icon" href="images/callielogo.jpg" />
+        <link rel="shortcut icon" href="images/CBlogo.jpg" />
 
     </head>
     <body>
@@ -232,9 +236,11 @@
         <div class="container">
           <div class="content">
               @yield('home')
-              @yield('menu.contact')
+              <div class ="main_page">
               @yield('menu.experience')
               @yield('menu.education')
+              @yield('menu.contact')
+            </div>
               @yield('menu.blog')
           </div>
         </div>
