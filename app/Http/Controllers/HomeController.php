@@ -23,7 +23,25 @@ class HomeController extends Controller
                            'where_am_i' => "I am not afraid to think outside the box while I strive for knowledge."
                          );
 
-            return view('home', compact('home'));
+            $experiences = Experience::all();
+
+            $experiences = $experiences->reverse();
+
+            $educations = Education::all();
+
+            $educations = $educations->reverse();
+
+            $title = 'Contact Me:';
+
+            $main_page = array($home, $experiences, $educations, $title);
+
+            return view('home', compact('home', 'experiences', 'educations', 'title'));
+
+          //  return   Views::make('base')
+                    //    ->nest('home', 'home', compact('home'));
+                        // ->nest('menu.experience', 'menu.experience', $experiences)
+                        // ->nest('menu.education', 'menu.education', $educations)
+                        // ->nest('menu.contact', 'menu.contact', $title);
     }
 
 

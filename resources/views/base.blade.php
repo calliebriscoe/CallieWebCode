@@ -222,10 +222,10 @@
               </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a href="experience">Experience</a></li>
-              <li><a href="education">Education</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#education">Education</a></li>
               <li><a href="blog">Blog</a></li>
-              <li><a href="contact">Contact Me</a></li>
+              <li><a href="#contact">Contact Me</a></li>
             </ul>
           </div>
         </div>
@@ -236,11 +236,6 @@
         <div class="container">
           <div class="content">
               @yield('home')
-              <div class ="main_page">
-              @yield('menu.experience')
-              @yield('menu.education')
-              @yield('menu.contact')
-            </div>
               @yield('menu.blog')
           </div>
         </div>
