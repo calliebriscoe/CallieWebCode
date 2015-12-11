@@ -13,20 +13,20 @@
      </ol>
      <div class="carousel-inner" role="listbox">
        <div class="item active">
-         <img class="first-slide" src="images/Kiki.jpg" alt="First slide">
+         <img class="first-slide" src="images/Austin.jpg" alt="First slide">
          <div class="container">
            <div class="carousel-caption">
              <!-- <h1>{{ $home['website_name'] }}</h1> -->
-             <p>{{ $home['where_am_i'] }}</p>
+             <p>{{ $home['what_am_i'] }} See my <a href="/#experience" style="color: #00b2bd">experience</a>.</p>
            </div>
          </div>
        </div>
        <div class="item">
-         <img class="second-slide" src="images/Austin.jpg" alt="Second slide">
+         <img class="second-slide" src="images/Kiki.jpg" alt="Second slide">
          <div class="container">
            <div class="carousel-caption">
              <!-- <h1>{{ $home['website_name'] }}</h1> -->
-             <p>{{ $home['what_am_i'] }}</p>
+             <p>{{ $home['where_am_i'] }} See my <a href="/#education" style="color: #00b2bd">education</a>.</p>
            </div>
          </div>
        </div>
@@ -35,7 +35,7 @@
          <div class="container">
            <div class="carousel-caption">
              <!-- <h1>{{ $home['website_name'] }}</h1> -->
-             <p>{{ $home['who_am_i'] }}</p>
+             <p>{{ $home['who_am_i'] }} <a href="/#contact" style="color: #00b2bd">Contact me</a>.</p>
            </div>
          </div>
        </div>
@@ -67,7 +67,7 @@
      @if ($experience['id'] % 2 == 0)
 
          <hr class="featurette-divider">
-         <table>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
          <tr>
            <th width="70%">
            <div class="row featurette">
@@ -89,20 +89,20 @@
       </tr>
      @else
          <hr class="featurette-divider">
-         <table>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0">
          <tr>
            <div class="row featurette">
-             <th width="30%">
+             <td width="30%">
                  <div class="image_experience">
                    <img class="featurette-image img-responsive" src="{{ $experience['image'] }}">
                  </div>
-             </th>
-             <th width="70%">
+             </td>
+             <td width="70%">
              <div class="text_experience_right">
                <h1 class="featurette-heading">{{ $experience['job_title'] }}</h1>
                <h2 class="featurette-date">{{ $experience['company'] }}</br><span class="text-muted">{{ $experience['start_date'] }} - {{ $experience['end_date'] }}</span></h2>
              </div>
-         </th>
+         </td>
          </div>
          </tr>
          </table>
@@ -175,8 +175,10 @@
 
      <div class="sub_title">
          <hr class="featurette-divider">
-     <h2>Feel free to see more at my <a href="http://www.linkedin.com/pub/callie-briscoe/61/838/4a8">LinkedIn</a>.</h2>
-     <h2>Or email me at <a href="mailto:calliebriscoe@gmail.com">calliebriscoe@gmail.com</a>.</h2>
+     <h2><img class="logo" src="images/CBlogo.jpg"></h2>
+     <h2>Feel free to see more on my <a href="http://www.linkedin.com/pub/callie-briscoe/61/838/4a8" style="color: #00b2bd">LinkedIn</a>.</h2>
+     <h2>Or email me at <a href="mailto:calliebriscoe@gmail.com" style="color: #00b2bd">calliebriscoe@gmail.com</a>.</h2>
+     <h2>See my code for this website and others like it on <a href="https://github.com/calliebriscoe/" style="color: #00b2bd">Github</a>.</h2>
      </div>
    </div>
 

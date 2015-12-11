@@ -49,6 +49,13 @@
               right: 0;
               left: 0;
               z-index: 20;
+
+            }
+            .logo {
+              width: 100px;
+            }
+            .navlogo {
+              width: 30px;
             }
 
             /* Flip around the padding for proper display in narrow viewports */
@@ -112,7 +119,18 @@
             ------------------------- */
 
             .featurette-divider {
-              margin: 80px 0; /* Space out the Bootstrap <hr> more */
+              margin: 50px 0; /* Space out the Bootstrap <hr> more */
+              text-align: center;
+              color: #00b2bd;
+            }
+            .featurette-divider:after {
+              content: '<??>';
+            	display: inline-block;
+            	position: relative;
+            	top: -14px;
+            	padding: 0 10px;
+            	color: #00b2bd;
+            	font-size: 18px;
             }
 
             /* Thin out the marketing headings */
@@ -179,6 +197,7 @@
 
             .text_experience_right {
               text-align: right;
+
             }
 
             .img_school {
@@ -247,9 +266,8 @@
     <hr class="featurette-divider">
     <footer>
       <div class="footer">
-      <p class="pull-right"><a href="/">Back to top</a></p>
-      <p> Created by Callie Briscoe in one weekend in November 2015. Self-taught components of this website: Homestead, Laravel, and AWS.
-        See my code for this website and others like it on <a href="https://github.com/calliebriscoe/">Github</a>.</p>
+      <p class="pull-right"><a href="/" style="color: #00b2bd">Back to top</a></p>
+      <p> Created by Callie Briscoe in one weekend in November 2015 and continually updated. Self-taught components of this website: Homestead, Laravel, and AWS.</p>
     </div>
     </footer>
   </div>
