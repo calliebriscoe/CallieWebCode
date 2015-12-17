@@ -119,7 +119,7 @@
             ------------------------- */
 
             .featurette-divider {
-              margin: 50px 0; /* Space out the Bootstrap <hr> more */
+              margin: 75px 0; /* Space out the Bootstrap <hr> more */
               text-align: center;
               color: #00b2bd;
             }
@@ -131,6 +131,7 @@
             	padding: 0 10px;
             	color: #00b2bd;
             	font-size: 18px;
+            }  border-radius: 20px;
             }
 
             /* Thin out the marketing headings */
