@@ -21,18 +21,23 @@
               text-align: center;
             }
             h1 {
-              font-size: 3.5em;
+              font-size: 5vw;
+            }
+            h2 {
+              font-size: 4vw;
+            }
+            h3 {
+              font-size: 3vw;
             }
             p {
-              font-size: 1em;
+              font-size: 2vw;
             }
             th {
-              padding: 1em;
+              padding: 1vw;
             }
 
-            .content {
-              margin-right: auto;
-              margin-left: auto;
+            .body_carousel {
+              margin-top: 55vw;
             }
 
             .main_page {
@@ -45,9 +50,8 @@
             /* Special class on .container surrounding .navbar, used for positioning it into place. */
             .navbar-wrapper {
               position: absolute;
+              padding: 0;
               top: 0;
-              right: 0;
-              left: 0;
               z-index: 20;
 
             }
@@ -78,7 +82,10 @@
             /* Carousel base class */
             .carousel {
               height: 50vw;
-              margin-bottom: 60px;
+              position: absolute;
+              min-width: 100%;
+              margin-top: 0px;
+
             }
             /* Since positioning the image, we need to help out the caption */
             .carousel-caption {
@@ -92,7 +99,6 @@
             }
             .carousel-inner > .item > img {
               top: 0;
-              left: 0;
               min-width: 100%;
               height: 50vw;
             }
@@ -130,7 +136,6 @@
             	top: -14px;
             	padding: 0 10px;
             	color: #00b2bd;
-            	font-size: 18px;
             }  border-radius: 20px;
             }
 
@@ -171,9 +176,6 @@
                 line-height: 1.4;
               }
 
-              .featurette-heading {
-                font-size: 50px;
-              }
             }
 
             @media (min-width: 992px) {
@@ -252,6 +254,57 @@
       </nav>
     </div>
   </div>
+
+  <div class="carousel">
+  <!-- Carousel
+  ================================================== -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="10000">
+  <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="images/Austin.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <!-- <h1>{{ $home['website_name'] }}</h1> -->
+              <p>{{ $home['what_am_i'] }} See my <a href="/#experience" style="color: #00b2bd">experience</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="images/Kiki.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <!-- <h1>{{ $home['website_name'] }}</h1> -->
+              <p>{{ $home['where_am_i'] }} See my <a href="/#education" style="color: #00b2bd">education</a>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="images/argo.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <!-- <h1>{{ $home['website_name'] }}</h1> -->
+              <p>{{ $home['who_am_i'] }} <a href="/#contact" style="color: #00b2bd">Contact me</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+  </div>
+
   <div class="body">
         <div class="container">
           <div class="content">
